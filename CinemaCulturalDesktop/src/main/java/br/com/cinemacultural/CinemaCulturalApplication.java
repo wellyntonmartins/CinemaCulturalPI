@@ -12,16 +12,10 @@ import br.com.cinemacultural.view.TelaPrincipal;
 
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
-import java.util.Arrays;
 
 public class CinemaCulturalApplication {
 
     public static void main(String[] args) {
-        if (Arrays.asList(args).contains("--test")) {
-            TestesAplicacao.executar();
-            return;
-        }
-
         try {
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
         } catch (Exception ignored) {
